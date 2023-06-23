@@ -1,0 +1,52 @@
+/* * {
+    color: rgb(85, 85, 85);
+} */
+div {
+    color: black;
+}
+.title {
+    color: rgb(45, 42, 191);
+}
+#gallery-identificator {
+    color: rgb(226, 119, 43);
+}
+div.text {
+    color: rgb(23, 99, 32);
+}
+.img-item,
+.gallery-title {
+    color: orange;
+}
+.text p {
+    color: rgb(174, 5, 5);
+}
+.list-point ~ li {
+    color: brown;
+}
+.title.year-category {
+    color: green;
+}
+.div-pr-1-2,
+.div-pr-1-1 {
+    background-color: white;
+}
+
+.div-pr-1 > div {
+    background-color: lightblue;
+}
+
+.div-pr-2-2,
+.div-pr-2-1 {
+    background-color: white;
+}
+.markered-pr-2 ~ div {
+    background-color: lightblue;
+}
+
+.div-pr-3-2,
+.div-pr-3-1 {
+    background-color: white;
+}
+.markered-pr-3 + div {
+    background-color: lightblue;
+}
