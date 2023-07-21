@@ -1,0 +1,80 @@
+/* ---Reset file--- */
+@import url(reset.css);
+/* ---Fonts--- */
+/* Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+/* Larsseit */
+@font-face {
+    font-family: "Larsseit";
+    src: url(../fonts/Larsseit.woff) format("woff"), url(../fonts/Larsseit.woff2) format("woff2");
+    font-display: swap;
+    font-weight: 400;
+    font-size: normal;
+}
+@font-face {
+    font-family: "Larsseit";
+    src: url(../fonts/Larsseit-Medium.woff) format("woff"), url(../fonts/Larsseit-Medium.woff2) format("woff2");
+    font-display: swap;
+    font-weight: 500;
+    font-size: normal;
+}
+@font-face {
+    font-family: "Larsseit";
+    src: url(../fonts/Larsseit-Bold.woff) format("woff"), url(../fonts/Larsseit-Bold.woff) format("woff2");
+    font-display: swap;
+    font-weight: 700;
+    font-size: normal;
+}
+/* Lato */
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Regular.woff) format("woff"), url(../fonts/Lato-Regular.woff2) format("woff2");
+    font-display: swap;
+    font-weight: 400;
+    font-size: normal;
+}
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Bold.woff) format("woff"), url(../fonts/Lato-Bold.woff2) format("woff2");
+    font-display: swap;
+    font-weight: 700;
+    font-size: normal;
+}
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Black.woff) format("woff"), url(../fonts/Lato-Black.woff2) format("woff2");
+    font-display: swap;
+    font-weight: 900;
+    font-size: normal;
+}
+
+* {
+    color: darkgray;
+    font-family: "Larsseit";
+}
+.page * {
+    font-family: "Lato";
+}
+.task {
+    color: black;
+}
+.task li {
+    color: brown;
+}
+#etymology {
+    color: blue;
+}
+code {
+    color: aqua;
+}
+.task code {
+    color: rgb(11, 11, 118);
+}
+
+.content-title ~ p {
+    color: red;
+}
+
+.content-title + p {
+    color: black;
+}
