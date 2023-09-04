@@ -64,6 +64,7 @@
     line-height: 1.5;
     padding-left: 58px;
     margin: 48px 0;
+    background: url(../img/icons/braces-blockquote.svg) 0 0 / 28px 20px no-repeat;
 }
 .page__bullet-list {
     margin-bottom: 24px;
@@ -73,6 +74,7 @@
     line-height: 1.6;
     padding-left: 32px;
     margin-bottom: 4px;
+    background: url(../img/icons/check-mark.svg) 0 50% / 16px 16px no-repeat;
 }
 .footer {
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 212, 255, 0.4637256269695378) 100%);
