@@ -1,0 +1,118 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700;900&display=swap");
+body {
+    font-family: Rubik;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+[class*="__container"] {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.header {
+    background-color: rgb(31, 144, 224);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.header__container {
+}
+.header__title {
+    text-align: center;
+    font-size: 32px;
+    padding: 20px 0;
+}
+.page {
+    background-color: #ede0d7;
+}
+.page__exposition {
+    background: url(../img/background.jpg) 0 0 / 100% no-repeat;
+    height: 1280px;
+    position: relative;
+}
+.car {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+.car__body {
+    background: url(../img/body.png) 0 0 / 100% no-repeat;
+    width: 1001px;
+    height: 268px;
+}
+.car__door {
+    position: absolute;
+    top: 50px;
+    left: 334px;
+    background: url(../img/door.png) 0 0 / 100% no-repeat;
+    width: 385px;
+    height: 178px;
+}
+.car__front-wheel {
+    position: absolute;
+    top: 113px;
+    left: 156px;
+    background: url(../img/front-wheel.png) 0 0 / 100% no-repeat;
+    width: 162px;
+    height: 158px;
+}
+.car__rear-wheel {
+    position: absolute;
+    top: 112px;
+    right: 68px;
+    background: url(../img/front-wheel.png) 0 0 / 100% no-repeat;
+    width: 162px;
+    height: 158px;
+}
+.car__head-light {
+    position: absolute;
+    top: 120px;
+    left: 16px;
+    background: url(../img/headlight.png) 0 0 / 100% no-repeat;
+    width: 96px;
+    height: 36px;
+}
+.car:hover .car__head-light {
+    position: absolute;
+    top: 120px;
+    left: 16px;
+    background: url(../img/headlight-turning-on.png) 0 0 / 100% no-repeat;
+    width: 96px;
+    height: 36px;
+}
+.car__rear-light {
+    position: absolute;
+    bottom: 150px;
+    right: 8px;
+    background: url(../img/rear-lights-black.png) 0 0 / 100% no-repeat;
+    width: 21px;
+    height: 40px;
+}
+.car:hover .car__rear-light {
+    position: absolute;
+    bottom: 150px;
+    right: 8px;
+    background: url(../img/rear-lights-black-red.png) 0 0 / 100% no-repeat;
+    width: 21px;
+    height: 40px;
+}
+.car__spoiler {
+    position: absolute;
+    bottom: 188px;
+    right: 16px;
+    background: url(../img/spoiler.png) 0 0 / 100% no-repeat;
+    width: 64px;
+    height: 18px;
+}
+.car__head-window {
+    position: absolute;
+    bottom: 184px;
+    left: 258px;
+    background: url(../img/front-window.png) 0 0 / 100% no-repeat;
+    width: 224px;
+    height: 88px;
+}
+.footer {
+}

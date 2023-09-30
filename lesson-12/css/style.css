@@ -1,0 +1,216 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+
+[class*="__container"] {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+body {
+    font-family: Montserrat;
+}
+.header {
+    background: lightgray;
+}
+.header__container {
+}
+.header__title {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+.page {
+}
+.page__container {
+}
+
+.practice__title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+.practice__text p {
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+.practice__space {
+    background-color: rgb(92, 182, 119);
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+    transition: all 2s ease 0s;
+}
+.practice__item {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition: all 2s ease 0s;
+}
+.practice__item--translate {
+}
+.practice__space:hover .practice__item--translate {
+    transform: translate(20px, 20px);
+}
+.practice__space:hover .practice__item--translate-2 {
+    transform: translate(100%, -20%);
+}
+.practice__space:hover .practice__item--scale {
+    transform: scale(0.2);
+}
+.practice__space:hover .practice__item--scale-2 {
+    transform: scale(2);
+}
+.practice__space:hover .practice__item--rotate {
+    transform: rotate(225deg);
+}
+.practice__space:hover .practice__item--rotate-2 {
+    transform: rotateX(225deg) rotateY(135deg);
+}
+.practice__space:hover .practice__item--skew {
+    transform: skew(20deg, 20deg);
+}
+.practice__space:hover .practice__item--matrix {
+    transform: matrix(0.4, 0, 0.5, 1.2, 60, 10);
+}
+.practice__space:hover .practice__item--complex {
+    transform: translate(20px, 20px) scale(0.2) rotate(225deg);
+}
+.practice__space:hover .practice__item--origin {
+    transform-origin: 100% 100%;
+    transform: scale(0.2);
+}
+.practice__space--perspective {
+    perspective: 100px;
+    perspective-origin: right bottom;
+}
+.practice__space:hover .practice__item--perspective {
+    transform: rotateX(45deg);
+}
+.practice__space--3d {
+    perspective: 100px;
+    perspective-origin: center;
+}
+.practice__space:hover .practice__item--3d {
+    transform: translate3d(20px, 20px, 20px) scale3d(1.3, 2, 1.4) rotate3d(1, 1, 1, 20deg);
+}
+.practice__space--style {
+    perspective: 100px;
+    transform-style: preserve-3d;
+}
+.practice__space:hover .practice__item--style {
+    transform: rotateX(180deg);
+}
+.practice__space--backface {
+    background: none;
+    perspective: 100px;
+    transform-style: preserve-3d;
+}
+.practice__space:hover .practice__item--backface {
+    transform: rotateX(180deg);
+    backface-visibility: hidden;
+}
+.car {
+    position: absolute;
+    transition: all 3s ease 0s;
+}
+.car__body {
+    background: url(../img/body.png) 0 0 / 100% no-repeat;
+    width: 1001px;
+    height: 268px;
+}
+.car__door {
+    position: absolute;
+    top: 50px;
+    left: 334px;
+    background: url(../img/door.png) 0 0 / 100% no-repeat;
+    width: 385px;
+    height: 178px;
+    z-index: 20;
+    transition: all 2s ease 0s;
+}
+.car__door:hover {
+    transform: rotate(-45deg);
+    transform-origin: top left;
+}
+.car__front-wheel {
+    position: absolute;
+    top: 113px;
+    left: 156px;
+    background: url(../img/front-wheel.png) 0 0 / 100% no-repeat;
+    width: 162px;
+    height: 158px;
+    transition: all 2.5s linear 0s;
+}
+.car:hover .car__front-wheel,
+.car:hover .car__rear-wheel {
+    transform: rotate(-300deg);
+}
+.section-automobile:hover .car {
+    transform: translate(-200px);
+}
+.car__rear-wheel {
+    position: absolute;
+    top: 112px;
+    right: 68px;
+    background: url(../img/front-wheel.png) 0 0 / 100% no-repeat;
+    width: 162px;
+    height: 158px;
+    transition: all 2.5s linear 0s;
+}
+.car__head-light {
+    position: absolute;
+    top: 120px;
+    left: 16px;
+    background: url(../img/headlight.png) 0 0 / 100% no-repeat;
+    width: 96px;
+    height: 36px;
+}
+.car:hover .car__head-light {
+    position: absolute;
+    top: 120px;
+    left: 16px;
+    background: url(../img/headlight-turning-on.png) 0 0 / 100% no-repeat;
+    width: 96px;
+    height: 36px;
+}
+.car__rear-light {
+    position: absolute;
+    bottom: 150px;
+    right: 8px;
+    background: url(../img/rear-lights-black.png) 0 0 / 100% no-repeat;
+    width: 21px;
+    height: 40px;
+}
+.car:hover .car__rear-light {
+    position: absolute;
+    bottom: 150px;
+    right: 8px;
+    background: url(../img/rear-lights-black-red.png) 0 0 / 100% no-repeat;
+    width: 21px;
+    height: 40px;
+}
+.car__spoiler {
+    position: absolute;
+    bottom: 188px;
+    right: 16px;
+    background: url(../img/spoiler.png) 0 0 / 100% no-repeat;
+    width: 64px;
+    height: 18px;
+}
+.car__head-window {
+    position: absolute;
+    bottom: 184px;
+    left: 258px;
+    background: url(../img/front-window.png) 0 0 / 100% no-repeat;
+    width: 224px;
+    height: 88px;
+}
+.section-automobile {
+    position: relative;
+}
+.section-practice {
+    padding-bottom: 200px;
+}
